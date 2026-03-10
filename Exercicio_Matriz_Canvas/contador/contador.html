@@ -1,0 +1,36 @@
+<html>
+
+</html>
+
+<head>
+    <style>
+        body {
+            margin-top: 50px;
+        }
+
+        #contador {
+            font-size: 40px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Exemplo:</h1>
+
+    <div id="contador"></div>
+    <button onclick="iniciar()">Iniciar Contagem</button>
+
+    <script>
+
+        function iniciar() {
+
+            let div = document.getElementById("contador");
+
+            for (let i = 10; i > 0; i--) {
+                div.innerHTML += i + "<br>"
+            }
+        }     
+    </script>
+</body>
